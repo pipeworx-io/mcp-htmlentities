@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-htmlentities",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "HTML entities MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-htmlentities": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "htmlentities"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-htmlentities.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/htmlentities",
   "pipeworx": {
-    "sourceHash": "v1-3926aecefa9caa7da700f86ce2aabe5fbaacf884aa5abf81e69b7ae4a31dd9fb",
-    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
+    "mode": "gateway",
+    "slug": "htmlentities",
+    "gatewaySlug": "htmlentities",
+    "sourceHash": "v1-531890dcaee224c479595c43d5ae450ca299c437314c2a08a6083dfbbfd0ca04",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
