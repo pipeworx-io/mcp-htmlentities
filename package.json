@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-htmlentities",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "HTML entities MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "htmlentities",
     "gatewaySlug": "htmlentities",
-    "sourceHash": "v1-531890dcaee224c479595c43d5ae450ca299c437314c2a08a6083dfbbfd0ca04",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-b8c448b9b24751c1d2746734ca315f01dd2702b3b737f74308ac970530d002f3",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
